@@ -64,8 +64,10 @@ class _otp_verificationState extends State<otp_verification> {
                   width: 64,
                   child: TextFormField(
                     onChanged: (value) {
-                      print(value);
-                      FocusScope.of(context).nextFocus();
+                      if (!value.toString().isEmpty) {
+                        print(value);
+                        FocusScope.of(context).nextFocus();
+                      }
                     },
                     decoration: InputDecoration(
                         border: OutlineInputBorder(
@@ -84,7 +86,10 @@ class _otp_verificationState extends State<otp_verification> {
                   width: 64,
                   child: TextFormField(
                     onChanged: (value) {
-                      FocusScope.of(context).nextFocus();
+                      if (!value.toString().isEmpty) {
+                        print(value);
+                        FocusScope.of(context).nextFocus();
+                      }
                     },
                     decoration: InputDecoration(
                         border: OutlineInputBorder(
@@ -103,7 +108,10 @@ class _otp_verificationState extends State<otp_verification> {
                   width: 64,
                   child: TextFormField(
                     onChanged: (value) {
-                      FocusScope.of(context).nextFocus();
+                     if (!value.toString().isEmpty) {
+                        print(value);
+                        FocusScope.of(context).nextFocus();
+                      }
                     },
                     decoration: InputDecoration(
                         border: OutlineInputBorder(
@@ -122,7 +130,10 @@ class _otp_verificationState extends State<otp_verification> {
                   width: 64,
                   child: TextFormField(
                     onChanged: (value) {
-                      FocusScope.of(context).nextFocus();
+                      if (!value.toString().isEmpty) {
+                        print(value);
+                        FocusScope.of(context).nextFocus();
+                      }
                     },
                     decoration: InputDecoration(
                         border: OutlineInputBorder(
